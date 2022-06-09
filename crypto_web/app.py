@@ -25,7 +25,10 @@ parameters = {
 'convert':'USD'
 }
 
-url = 'https://pro-api.coinmarketcap.com/v1/cryptocurrency/listings/latest'
+try:
+    json = requests.get(url, params=parameters, headers=headers).json()
+except Exception as e:
+    print(e, "Did you forget to put the key in putkeyhere.txt?")
 
 json = requests.get(url, params=parameters, headers=headers).json()
 
