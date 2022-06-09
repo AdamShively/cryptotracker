@@ -67,24 +67,13 @@ def get_display():
 
 def get_date_time():
     """
-    gets current day/time and reformats if neccessary
+    gets current day/time
     :return: str containing date/time
     """
     now = dt.datetime.now()
     #date and time format: mm/dd/YYYY H:M:S
     format = "%m/%d/%Y %H:%M:%S"
     date_time = now.strftime(format)
-    hour = int(date_time[11:13])
-
-    #Reformat to traditional time format 
-    #instead of military time
-    if hour > 12:
-        hour = hour - 12
-        temp = list(date_time)
-        temp[11] = str(hour)[0:1]
-        temp[12] = str(hour)[1:2]
-
-        return "".join(temp)
 
     return date_time
 
