@@ -1,0 +1,30 @@
+body {
+    color:rgba(98, 109, 236, 0.933);
+    width: 1500px;
+    height: 700px;
+    border: 40px solid rgb(103, 109, 109);
+    padding: 70px;
+    margin: 20px;
+    font-size: 28px;
+}
+
+.box {
+    margin-top: 60px;
+    height: 360px;
+    background-position: center;
+    background-color: #c5c5db;
+}
+
+.gfg {
+    color: rgb(46, 40, 59);
+    text-align: center;
+    margin-top: 60px;
+    font-size: 50px;
+}
+
+.gfg1 {
+    color: rgb(100, 92, 92);
+    text-align: center;
+    margin-top: 60px;
+    font-size: 40px;
+}
