@@ -15,14 +15,14 @@ except Exception as e:
     print(e)
 
 headers = {
-'Accepts': 'application/json',
-'X-CMC_PRO_API_KEY': key
+    'Accepts': 'application/json',
+    'X-CMC_PRO_API_KEY': key
 }
 
 parameters = {
-'start':'1',
-'limit':'25',
-'convert':'USD'
+    'start':'1',
+    'limit':'25',
+    'convert':'USD'
 }
 
 try:
